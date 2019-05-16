@@ -41,13 +41,13 @@ public abstract class Robot extends RobotBase{
 
     //field positioning variables
 
-    protected double x = 0;
-    protected double y = 0;
+    protected double xPos = 0;
+    protected double yPos = 0;
 
     protected double lastX = 0;
     protected double lastY = 0;
 
-    protected final double ODOM_DIAMATER = 2;
+    protected final double ODOM_DIAMATER = 2.0/12;
     protected final double ODOM_CIRC = ODOM_DIAMATER*Math.PI;
 
     protected final double ODOM_PPR = 360;
