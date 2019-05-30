@@ -59,7 +59,7 @@ public abstract class RobotAutoBase extends Robot {
 
             //find direct angle to target coordinate
             double slope = (y-yPos)/(x-xPos);
-            double direction = Math.atan(slope);
+            double direction = Math.atan2(x-xPos, y-yPos);
             //get radian value of the robots angle
             double current = Math.toRadians(getGlobal() % 360);
 
